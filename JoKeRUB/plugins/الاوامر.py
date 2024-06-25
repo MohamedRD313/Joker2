@@ -18,7 +18,10 @@ from ..sql_helper.globals import gvarstatus
 plugin_category = "extra"
 
 rehu = [  
-    " ون بيس عمك ",
+    " ون بيس عمك "
+    " علي مع الحق والحق مع علي "
+    " علوش حفظه الله @ZS_SQ "
+    " محمد حفظه الله @Zo_r0 ",
 ]
 @l313l.ar_cmd(pattern="الاوامر(?:\s|$)([\s\S]*)")
 async def _(event):
