@@ -45,7 +45,7 @@ digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/63a826d5e5f0003e006a
 digitalgrouppfp = Config.DIGITAL_GROUP_PIC or "https://telegra.ph/file/63a826d5e5f0003e006a0.jpg"
 jep = Config.DEFAULT_PIC or "JoKeRUB/helpers/styles/PaybAck.ttf"
 normzltext = "1234567890"
-namew8t = Config.NAME_ET or "زربة وقتي"
+namew8t = Config.NAME_ET or "اسم وقتي"
 biow8t = Config.BIO_ET or "بايو وقتي"
 phow8t = Config.PHOTO_ET or "الصورة الوقتية"
 
@@ -223,7 +223,7 @@ async def _(event):
     while not downloader.isFinished():
         pass
     if gvarstatus("digitalpic") is not None and gvarstatus("digitalpic") == "true":
-        return await edit_delete(event, "**الصـورة الـوقتية شغـالة بالأصـل 🧸♥**")
+        return await edit_delete(event, "**الصـورة الـوقتية مشتغلة بالأصـل 🧸♥**")
     addgvar("digitalpic", True)
     await edit_delete(event, "**تم تفـعيل الصـورة الـوقتية بنجـاح ✓**")
     await digitalpicloop()
