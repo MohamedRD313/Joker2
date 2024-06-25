@@ -67,7 +67,7 @@ async def permalink(mention):
 @l313l.on(admin_cmd(pattern="رفع تاج(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
-    user, custom = await get_user_from_event(mention)
+نت    user, custom = await get_user_from_event(mention)
     if not user:
         return
     if custom:
@@ -78,7 +78,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه تاج بواسطة :** {my_mention} 👑🔥")
 
-@l313l.on(admin_cmd(pattern="رفع قرد(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع سلبوح(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -90,7 +90,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه قرد واعطائه موزة 🐒🍌 بواسطة :** {my_mention}")
+    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه سلبوح 🐛 بواسطة :** {my_mention}")
 
 @l313l.on(admin_cmd(pattern="رفع بكلبي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -106,7 +106,7 @@ async def permalink(mention):
     
     
 
-@l313l.on(admin_cmd(pattern="رفع مطي(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع سني(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -118,7 +118,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه مطي 🐴 بواسطة :** {my_mention} \n**᯽︙  تعال حبي استلم  انه **")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه سني دير يالك ينفجر 😹 بواسطة :** {my_mention} \n**᯽︙  تعال حبي استلم  انه **")
     
 #كـتابة المـلف وتعديل.    :   السيد حسين.   اخمط وسمي روحك مطور فرخي 😂
 # اذا انت ابن حرام اخمط 😂
