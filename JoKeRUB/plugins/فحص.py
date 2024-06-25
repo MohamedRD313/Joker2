@@ -45,7 +45,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "⿻┊‌‎"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**🦂[ سورس العقرب يشتغل ](t.me/jepthon)父**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** ✔️صح[ سورس العقرب يشتغل ](t.me/jepthon)父**"
     HuRe_IMG = gvarstatus("ALIVE_PIC") or Config.A_PIC
     l313l_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = l313l_caption.format(
@@ -87,10 +87,10 @@ async def amireallyalive(event):
 
 
 temp = """{ALIVE_TEXT}
-**‎{EMOJI}‌‎𝙽𝙰𝙼𝙴🦂 {mention}** ٫
-**‌‎{EMOJI}‌‎𝙿𝚈𝚃𝙷𝙾𝙽🦂 `{pyver}`** ٫
-**‌‎{EMOJI}‌‎𝙹𝙾𝙺𝙴𝚁🦂 `{telever}`** ٫
-**‌‎{EMOJI}‌‎𝚄𝙿𝚃𝙸𝙼𝙴🦂 `{uptime}`** ٫
-‌‎**{EMOJI}‌‎‌‎𝙿𝙸𝙽𝙶🦂 `{ping}`** ٫
-‌‎**{EMOJI}‌‎‌‎𝚂𝙴𝚃𝚄𝙿 𝙳𝙰𝚃𝙴🦂 `{Tare5}`** ٫
-*🦂 سورس العقرب🦂**"""
+**‎{EMOJI}‌‎𝐍𝐢𝐦𝐞 {mention}** ٫
+**‌‎{EMOJI}‌‎𝐏𝐲𝐭𝐡𝐨𝐧 `{pyver}`** ٫
+**‌‎{EMOJI}‌‎𝐒𝐜𝐨𝐫𝐩𝐢𝐨𝐧 `{telever}`** ٫
+**‌‎{EMOJI}‌‎𝐔𝐩𝐭𝐢𝐦𝐞 `{uptime}`** ٫
+‌‎**{EMOJI}‌‎‌‎𝐏𝐢𝐧𝐠 `{ping}`** ٫
+‌‎**{EMOJI}‌‎‌‎𝐒𝐞𝐭𝐮𝐩 𝐃𝐚𝐭𝐞 `{Tare5}`** ٫
+*  سورس العقرب يشتغل  ✔️ **"""
