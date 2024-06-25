@@ -260,7 +260,7 @@ async def permalink(mention):
 
 @l313l.on(admin_cmd(pattern="سيد(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
-    await edit_or_reply(mention, f"سماحة السيد حسين علي مطور سورس الجوكر @jepthon")
+    await edit_or_reply(mention, f"ععمامكم علوش ومحمد مطورين العقرب @ZS_SQ @Zo_r0")
 
 @l313l.on(admin_cmd(pattern="رفع ايجة(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -441,3 +441,15 @@ async def permalink(mention):
     lMl10l = random.choice(rehu)
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙الهمسة من المستخدم [{JoKeRUB}](tg://user?id={user.id}) تم كشفها بنجاح ✓**\n**᯽︙  الهمسة هي : {lMl10l} ** ")
+
+@l313l.on(admin_cmd(pattern="رفع حية(?:\s|$)([\s\S]*)"))
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    JoKeRUB = user.last_name.replace("\u2060", "") if user.last_name else user.username
+    me = await mention.client.get_me()
+    my_first = me.first_name
+    my_mention = f"[{me.first_name}](tg://user?id={me.id})"
+    await edit_or_reply(mention, f" ᯽︙  المستخدم => •  [{JoKeRUB}](tg://user?id={user.id}) \n ☑️ ᯽︙  تم رفعها حية  الكروب 🐍 بواسطه  :{my_mention} .\n᯽︙  ها لچ تس تس تس 🐍  ")
+    
