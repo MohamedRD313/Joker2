@@ -7,7 +7,7 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return "Joker working 😁"
+        return "𝗦𝗰𝗼𝗿𝗽𝗶𝗼𝗻 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 👊🏻 "
 
 api.add_resource(Greeting, '/')
 app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
