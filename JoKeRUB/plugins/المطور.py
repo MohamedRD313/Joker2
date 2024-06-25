@@ -49,12 +49,12 @@ async def amireallyalive(event):
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
     CUSTOM_ALIVE_TEXT = gvarstatus("ALIVE_TEXT")
-    CAT_IMG = "https://images.squarespace-cdn.com/content/v1/561b8ec9e4b0fcd88caa0732/1614152685578-J3H29R1XVTI8FN2TF5WW/REDA.jpg"
+    CAT_IMG = "https://telegra.ph/file/806e83ebc8c15da72c80d.jpg"
     if CAT_IMG:
         CAT = [x for x in CAT_IMG.split()]
         A_IMG = list(CAT)
         PIC = random.choice(A_IMG)
-        cat_caption = f"مطورين الجوكر\n"
+        cat_caption = f"مطورين العقرب "
         cat_caption += f"✛━━━━━━━━━━━━━✛\n"
         cat_caption += f"- المطور  : @ZS_SQ\n"
         cat_caption += f"- المطور  : @Zo_r0\n"
