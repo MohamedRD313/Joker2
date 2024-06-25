@@ -49,6 +49,17 @@ async def permalink(mention):
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"🚻 ** ᯽︙  المستخدم => • ** [{JoKeRUB}](tg://user?id={user.id}) \n ☑️ **᯽︙  تم رفعها مرتك بواسطه  :**{my_mention} 👰🏼‍♀️.\n**᯽︙  يلا حبيبي امشي نخلف بيبي 👶🏻🤤** ")
+@l313l.on(admin_cmd(pattern=رفعي(?:\s|$)([\s\S]*)"))
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    JoKeRUB = user.last_name.replace("\u2060", "") if user.last_name else user.username
+    me = await mention.client.get_me()
+    my_first = me.first_name
+    my_mention = f"[{me.first_name}](tg://user?id={me.id})"
+    await edit_or_reply(mention, f"🚻  ᯽︙  المستخدم => •  [{JoKeRUB}](tg://user?id={user.id}) \n ☑️ ᯽︙تم رفعه سني بواسطه  :{my_mention} .\n᯽︙  يلا حبيبي امشي نفجر  ")
+
 
 @l313l.on(admin_cmd(pattern="رفع جلب(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
