@@ -57,9 +57,9 @@ async def aljoker_4ever():
 )
 async def Hussein(event):
     "To reload Your bot"
-    joker = await edit_or_reply(event, "** عيوني هسه شكم دقيقه وتنزل التحديثات ✋🏻**")
+    joker = await edit_or_reply(event, "** ᯽︙ انتظر 2-3 دقيقة, جارِ اعادة التشغيل...**")
     await aljoker_4ever()
-    await event.client.reload(Joker2)
+    await event.client.reload(joker2)
 
 @l313l.ar_cmd(
     pattern="اطفاء$",
@@ -92,7 +92,7 @@ async def _(event):
     },
 )
 async def set_pmlog(event):
-    " لتحديـث الدردشـة بعـد إعـادة التشغيـل  أو إعـادة التحميـل  "
+    "᯽︙ لتحديـث الدردشـة بعـد إعـادة التشغيـل  أو إعـادة التحميـل  "
     input_str = event.pattern_match.group(1)
     if input_str == "ايقاف":
         if gvarstatus("restartupdate") is None:
@@ -112,7 +112,7 @@ async def Hussein(event):
             if event.message.message == "اعادة تشغيل":
                 joker = await event.reply("** ᯽︙ بالخدمة مطوري سيتم اعادة تشغيل السورس 😘..**")
                 await aljoker_4ever()
-                await event.client.reload(Joker2)
+                await event.client.reload(joker2)
                     
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
