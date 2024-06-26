@@ -95,8 +95,8 @@ async def startupmessage():
             Config.CATUBLOGO = await l313l.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://t.me/MemeSoundJep/24",
-                caption="**‏᯽︙ بــوت الجوكر يـعـمـل بـنـجـاح ✓ \n᯽︙ أرسل `.الاوامر`لرؤية اوامر السورس \n  ᯽︙ لأستعمال بوت الأختراق عبر كود التيرمكس أرسل`.هاك`**",
-                buttons=[(Button.url("سورس الجوكر", "https://t.me/jepthon"),)],
+                caption="**‏🦂︙ بــوت العقرب يـعـمـل بـنـجـاح ✓ \n🦂︙ أرسل `.الاوامر`لرؤية اوامر السورس \n  ᯽︙ لأستعمال بوت الأختراق عبر كود التيرمكس أرسل`.هاك`**",
+                buttons=[(Button.url("سورس العقرب ", "https://t.me/Scorpions_scorp"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -130,7 +130,7 @@ async def startupmessage():
 async def mybot():
     try:
         starkbot = await l313l.tgbot.get_me()
-        joker = "الجوكر 🤡"
+        joker = "العقرب 🦂"
         bot_name = starkbot.first_name
         botname = f"@{starkbot.username}"
         if bot_name.endswith("Assistant"):
@@ -175,7 +175,7 @@ async def add_bot_to_logger_group(chat_id):
         except Exception as e:
             LOGS.error(str(e))
 #by @jepthon بس اشوفك خامطه للكود اهينك وافضحك
-JoKeRUB = {"@jepthon", "@jepthonsupport"}
+JoKeRUB = {"@Scorpions_scorp", "@Scorpions_scorp"}
 async def saves():
    for lMl10l in JoKeRUB:
         try:
@@ -281,15 +281,15 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @Jepthon"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @Scorpions_scorp"
         photobt = await l313l.upload_file(file="l313l/razan/resources/start/Jepthon.JPEG")
-        botlog_group_id = await aljoker_the_best(l313l, "مجموعة أشعارات الجوكر")
+        botlog_group_id = await aljoker_the_best(l313l, "مجموعة أشعارات العقرب ")
         if botlog_group_id:
             addgvar("PRIVATE_GROUP_BOT_API_ID", botlog_group_id)
             print("᯽︙تم العثور على مجموعة المساعدة بالفعل وإضافتها إلى المتغيرات.")
         else:
             _, groupid = await create_supergroup(
-                "مجموعة أشعارات الجوكر", l313l, Config.TG_BOT_USERNAME, descript, photobt
+                "مجموعة أشعارات العقرب ", l313l, Config.TG_BOT_USERNAME, descript, photobt
             )
             addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
             print("᯽︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
