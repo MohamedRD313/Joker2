@@ -417,7 +417,7 @@ async def _(event):
 async def _(event):
      if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
-        "شرح اوامر اللستة :\n★•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•★➖\n᯽︙ اختر احدى هذه الاوامر\n\n- ( `.لستة` )\nيقوم بصنع لستة شفافة لمنشور معين\nشـرح الامـر  : \n https://t.me/jepthon\n\n★•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•★➖\n⌔︙CH : @Scorpions_scorp"
+        "شرح اوامر اللستة :\n★•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•★➖\n᯽︙ اختر احدى هذه الاوامر\n\n- ( `.لستة` )\nيقوم بصنع لستة شفافة لمنشور معين\nشـرح الامـر  : \n https://t.me/Scorpions_scorp\n\n★•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•★➖\n⌔︙CH : @Scorpions_scorp"
 )
 @l313l.ar_cmd(
     pattern="اوامر الملكية$",
