@@ -423,6 +423,20 @@ async def permalink(mention):
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n᯽︙  تـم رفعـه زنجي بواسطة : {my_mention} \n᯽︙    ها لك 👨🏿   ")
+    
+@l313l.on(admin_cmd(pattern="رفع حامل(?:\s|$)([\s\S]*)"))
+async def permalink(mention):
+    """Generates a link to the user's PM with a custom text."""
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 705475246:
+        return await edit_or_reply(mention, f"- لكك دي هذا المطور")
+    JoKeRUB = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    me = await mention.client.get_me()
+    my_first = me.first_name
+    my_mention = f"[{me.first_name}](tg://user?id={me.id})"
+    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n᯽︙  تـم رفعـه حامل بواسطة : {my_mention} \n᯽︙  بيا شهر؟🤰😹 ")
 
 @l313l.on(admin_cmd(pattern="زواج(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
