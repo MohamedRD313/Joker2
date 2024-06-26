@@ -44,7 +44,7 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("᯽︙سورس العقرب يعـمل بـنجاح ")
+    print("سورس العقرب يعـمل بـنجاح ")
     print(
         f"تم تشغيل الانلاين تلقائياً ارسل {cmdhr}الاوامر لـرؤيـة اوامر السورس\
         \nللمسـاعدة تواصـل  @Zo_r0 @ZS_SQ"
