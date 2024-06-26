@@ -35,7 +35,7 @@ else:
     with open(file_path, "w") as file:
         file.write(installation_time)
 
-@l313l.ar_cmd(pattern="كشف السورس(?:\s|$)([\s\S]*)")
+@l313l.ar_cmd(pattern="فحص(?:\s|$)([\s\S]*)")
 async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     uptime = await get_readable_time((time.time() - StartTime))
