@@ -561,7 +561,7 @@ async def Hussein(event):
     url = event.pattern_match.group(1)
     lMl10l = event.pattern_match.group(2)
     add_link(lMl10l, url)
-    await event.edit(f"**᯽︙ تم اضافة البصمة {lMl10l} بنجاح ✓ **")
+    await event.edit(f"** تم اضافة البصمة {lMl10l} بنجاح ✓ **")
     joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
     joker = Get(joker)
     try:
@@ -588,7 +588,7 @@ async def Hussein(event):
 async def delete_aljoker(event):
     lMl10l = event.pattern_match.group(1)
     delete_link(lMl10l)
-    await event.edit(f"**᯽︙ تم حذف البصمة '{lMl10l}' بنجاح ✓**")
+    await event.edit(f"** تم حذف البصمة '{lMl10l}' بنجاح ✓**")
     joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
     joker = Get(joker)
     try:
@@ -600,11 +600,11 @@ async def delete_aljoker(event):
 async def list_aljoker(event):
     links = SESSION.query(AljokerLink).all()
     if links:
-        message = "**᯽︙ قائمة تخزين اوامر الميمز:**\n"
+        message = "** قائمة بصمات الميمز الخاصة:**\n"
         for link in links:
             message += f"- البصمة : .`{link.key}`\n"
     else:
-        message = "**᯽︙ لاتوجد بصمات ميمز مخزونة حتى الآن**"
+        message = "** لاتوجد بصمات ميمز مخزونة حتى الآن**"
     await event.edit(message)
     joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
     joker = Get(joker)
@@ -615,7 +615,7 @@ async def list_aljoker(event):
 @l313l.on(admin_cmd(outgoing=True, pattern="ازالة_البصمات"))
 async def delete_all_aljoker(event):
     SESSION.query(AljokerLink).delete()
-    await event.edit("**᯽︙ تم حذف جميع بصمات الميمز من القائمة **")
+    await event.edit("**تم حذف جميع بصمات الميمز من القائمة **")
     joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
     joker = Get(joker)
     try:
