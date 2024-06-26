@@ -95,26 +95,26 @@ async def _(event):
 async def aljoker313(joker313):
   rl = random.randint(1,385)
   url = f"https://t.me/DwDi1/{rl}"
-  await joker313.client.send_file(joker313.chat_id,url,caption="᯽︙ BY : @jepthon 🎀",parse_mode="html")
+  await joker313.client.send_file(joker313.chat_id,url,caption="᯽︙ BY : @Scorpions_scorp🦂",parse_mode="html")
   await joker313.delete()
     
 @l313l.on(admin_cmd(outgoing=True, pattern="شعر$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/L1BBBL/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="᯽︙ BY : @jepthon 🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="᯽︙ BY : @Scorpions_scorp🦂",parse_mode="html")
   await vois.delete()
 @l313l.on(admin_cmd(outgoing=True, pattern="قران$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/QuraanJep/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="᯽︙ BY : @jepthon 🤲🏻☪️",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="᯽︙ BY : @Scorpions_scorp 🤲🏻☪️",parse_mode="html")
   await vois.delete()
 @l313l.on(admin_cmd(outgoing=True, pattern="ثيم$"))
 async def jepThe(theme):
   rl = random.randint(2,510)
   url = f"https://t.me/GSSSD/{rl}"
-  await theme.client.send_file(theme.chat_id,url,caption="᯽︙ THEME BY : @jepthon 🎊",parse_mode="html")
+  await theme.client.send_file(theme.chat_id,url,caption="᯽︙ THEME BY : @Scorpions_scorp 🎊",parse_mode="html")
   await theme.delete()
 @l313l.on(admin_cmd(outgoing=True, pattern="لاتغلط$"))
 async def jepmeme(memejep):
