@@ -29,12 +29,12 @@ async def mutejep(event):
         replied_user = await event.client.get_entity(event.chat_id)
         if is_muted(event.chat_id, event.chat_id):
             return await event.edit(
-                "**- هـذا المسـتخـدم مڪتـوم . . سـابقـاً **"
+                "**- هـذا بالع كتم من زمان 🗿 **"
             )
         if event.chat_id == l313l.uid:
-            return await edit_delete(event, "**𖡛... . لمـاذا تࢪيـد كتم نفسـك؟  ...𖡛**")
+            return await edit_delete(event, "**تريد تكتم روحك يا ورع 🗿**")
         if event.chat_id == 705475246:
-            return await edit_delete(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
+            return await edit_delete(event, "** دروح تريد تكتم المطور -_-**")
         try:
             mute(event.chat_id, event.chat_id)
             joker_users.append(replied_user)
@@ -44,7 +44,7 @@ async def mutejep(event):
             return await event.client.send_file(
                 event.chat_id,
                 joker_mute,
-                caption="** تم ڪتـم الـمستخـدم  . . بنجـاح 🔕✓**",
+                caption="** يلا ابلع كتم ولا كلمة✓**",
             )
         if BOTLOG:
             await event.client.send_message(
@@ -64,19 +64,19 @@ async def mutejep(event):
         if not user:
             return
         if user.id == l313l.uid:
-            return await edit_or_reply(event, "**𖡛... . لمـاذا تࢪيـد كتم نفسـك؟  ...𖡛**")
+            return await edit_or_reply(event, "**تريد تكتم روحك يا ورع **")
         if user.id == 705475246:
-            return await edit_or_reply(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
+            return await edit_or_reply(event, "**دروح تريد تكتم المطور -_-**")
         if is_muted(user.id, event.chat_id):
             return await edit_or_reply(
-                event, "**عــذراً .. هـذا الشخـص مكتــوم سـابقــاً هنـا**"
+                event, "**هذا بالع كتم من زمان 🗿**"
             )
         result = await event.client.get_permissions(event.chat_id, user.id)
         try:
             if result.participant.banned_rights.send_messages:
                 return await edit_or_reply(
                     event,
-                    "**عــذراً .. هـذا الشخـص مكتــوم سـابقــاً هنـا**",
+                    "**هذا بالع كتم من زمان 🗿**",
                 )
         except AttributeError:
             pass
@@ -187,13 +187,13 @@ async def unmutejep(event):
 @l313l.ar_cmd(pattern=r"قائمة المكتومين")
 async def show_muted_users(event):
     if len(joker_users) > 0:
-        joker_list = "**᯽︙ قائمة المستخدمين المكتومين:**\n"
+        joker_list = "** قائمة المستخدمين المكتومين 🦂**\n"
         for i, user in enumerate(joker_users, start=1):
             joker_link = f"[{user.first_name}](tg://user?id={user.id})"
             joker_list += f"{i}. {joker_link}\n"
         await event.edit(joker_list)
     else:
-        await event.edit("**᯽︙ لا يوجد مستخدمين مكتومين حاليًا**")
+        await event.edit("** لا يوجد مستخدمين مكتومين حاليًا**")
 # ===================================== # 
 
 @l313l.ar_cmd(incoming=True)
