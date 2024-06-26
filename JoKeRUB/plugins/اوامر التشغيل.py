@@ -59,7 +59,7 @@ async def Hussein(event):
     "To reload Your bot"
     joker = await edit_or_reply(event, "** ᯽︙ انتظر 2-3 دقيقة, جارِ اعادة التشغيل...**")
     await aljoker_4ever()
-    await event.client.reload(joker2)
+    await event.client.reload(Scorpion)
 
 @l313l.ar_cmd(
     pattern="اطفاء$",
@@ -112,7 +112,7 @@ async def Hussein(event):
             if event.message.message == "اعادة تشغيل":
                 joker = await event.reply("** ᯽︙ بالخدمة مطوري سيتم اعادة تشغيل السورس 😘..**")
                 await aljoker_4ever()
-                await event.client.reload(joker2)
+                await event.client.reload(Scorpion)
                     
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
