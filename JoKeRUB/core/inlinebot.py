@@ -228,7 +228,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("الحـالة ⚒️", data="stats"),
-                    Button.url(" JoKeRUB UsᴇʀBoᴛ", "https://t.me/jepthon"),
+                    Button.url(" JoKeRUB UsᴇʀBoᴛ", "https://t.me/Scorpions_scorp"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -336,7 +336,7 @@ async def inline_handler(event):  # sourcery no-metrics
 
             buttons = [Button.inline("عـرض الـرسـالة 🔐", data=f"troll_{timestamp}")]
             result = builder.article(
-                title="رسـالة تـرول من سـورس الجوكر 🧸♥",
+                title="رسـالة تـرول من سـورس العقرب ",
                 text=f"فقـط {razan} هـو مـن يستـطيع مشـاهدتهـا !",
                 buttons=buttons,
             )
@@ -386,7 +386,7 @@ async def inline_handler(event):  # sourcery no-metrics
 
             buttons = [Button.inline("عـرض الـرسـالة 🔐", data=f"rzan_{timestamp}")]
             result = builder.article(
-                title="همسـة سـرية من سـورس الجوكر 🧸♥",
+                title="همسـة سـرية من سـورس العقرب ",
                 text=f"فقـط {razan} هـو مـن يستـطيع مشـاهدتهـا !",
                 buttons=buttons,
             )
@@ -409,7 +409,7 @@ async def inline_handler(event):  # sourcery no-metrics
 
             buttons = [Button.inline("قراءة الـرسالـة ", data=f"hide_{timestamp}")]
             result = builder.article(
-                title="رسـالة مخفيـة من سـورس الجوكر 🧸♥",
+                title="رسـالة مخفيـة من سـورس العقرب ",
                 text=f"✖✖✖",
                 buttons=buttons,
             )
@@ -559,7 +559,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("قنـاة السـورس ⚒️", "https://t.me/jepthon"),
+                Button.url("قنـاة السـورس ⚒️", "https://t.me/Scorpions_scorp"),
                 Button.url(
                     "كـروب المـساعدة 📬",
                     "https://t.me/jepthon1",
@@ -571,20 +571,20 @@ async def inline_handler(event):  # sourcery no-metrics
             url=ROZLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "**[بـوت الجوكر 🧸♥](https://t.me/jepthon)**\
+            "**[بوت العقرب ](https://t.me/Scorpions_scorp)**\
             \n\
-            \n❤ الجوكر هـو بـوت بسـيط يدخـل الـى حسـابك لجعـلك تتحـكم به معـ اوامـر معينـة.\
+            \n العقرب هـو بـوت بسـيط يدخـل الـى حسـابك لجعـلك تتحـكم به معـ اوامـر معينـة.\
             \n\
             \n**اذا كـنت تـرغب بتـنصيـب السـورس عـلى حسـابك ,\
-            \n🐾 تعال الـى [كروب المسـاعدة](https://t.me/jepthon1)!**",
+            \n🐾 تعال الـى [مطور السورس](https://t.me/@ZS_SQ)!**",
             "md",
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="l313l 🧸♥",
-            description="ادخـل كـروب المسـاعدة",
-            url="https://t.me/jepthon1",
+            title=" 𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂",
+            description="المطور ",
+            url="https://t.me/Scorpions_scorp",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
