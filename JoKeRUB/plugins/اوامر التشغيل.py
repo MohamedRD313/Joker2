@@ -57,7 +57,7 @@ async def aljoker_4ever():
 )
 async def Hussein(event):
     "To reload Your bot"
-    joker = await edit_or_reply(event, "** ᯽︙ انتظر 2-3 دقيقة, جارِ اعادة التشغيل...**")
+    Scorpion = await edit_or_reply(event, "** ᯽︙ انتظر 2-3 دقيقة, جارِ اعادة التشغيل...**")
     await aljoker_4ever()
     await event.client.reload(Scorpion)
 
@@ -110,7 +110,7 @@ async def Hussein(event):
         owner_id = reply_msg.from_id.user_id
         if owner_id == l313l.uid:
             if event.message.message == "اعادة تشغيل":
-                joker = await event.reply("** ᯽︙ بالخدمة مطوري سيتم اعادة تشغيل السورس 😘..**")
+                Scorpion = await event.reply("** ᯽︙ بالخدمة مطوري سيتم اعادة تشغيل السورس 😘..**")
                 await aljoker_4ever()
                 await event.client.reload(Scorpion)
                     
