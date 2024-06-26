@@ -1,4 +1,4 @@
-#all write Codes By Team Aljoker @jepthon
+#all write Codes By Team Aljoker @Scorpions_scorp
 #By Hussein @lMl10l
 import asyncio
 import random
@@ -30,7 +30,7 @@ async def _(event):
         except YouBlockedUserError:
             await event.edit("** اولا الغي حظر @SpamBot وحاول مجددا**")
             return
-        await event.edit(f"- {response.message.message}\n @jepthon")
+        await event.edit(f"- {response.message.message}\n @Scorpions_scorp")
 
 
 @l313l.on(admin_cmd(pattern="الاغنية ?(.*)"))
