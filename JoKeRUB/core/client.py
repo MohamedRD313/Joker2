@@ -151,7 +151,7 @@ class HuReClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطا الجوكر**\n\n"
-                        link = "[هنا](https://t.me/jepthonSupport)"
+                        link = "[هنا](https://t.me/@ZS_SQ)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
@@ -266,7 +266,7 @@ class HuReClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطا الجوكر**\n\n"
-                        link = "[هنا](https://t.me/GroupHuRe)"
+                        link = "[هنا](https://t.me/@ZS_SQ)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
