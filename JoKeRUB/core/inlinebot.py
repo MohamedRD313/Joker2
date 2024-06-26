@@ -53,10 +53,10 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**- [سـورس الجوكر](https://t.me/jepthon)\
+    text = f"**- [سـورس العقرب](https://t.me/Scorpions_scorp)\
         \n المسـاعد\
         \n\
-        \n◽ الجوكر لـ {mention}**"
+        \n◽ العقرب لـ {mention}**"
     buttons = [
         (Button.inline("ℹ️ • التعليمات •", data="check"),),
         (
