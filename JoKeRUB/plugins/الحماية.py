@@ -82,7 +82,7 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
                 remwarns=remwarns,
             )  # ترجمه وكتابة فريق الجوكر
         else:
-            USER_BOT_WARN_ZERO = f"- حذࢪتك وكتلك لا تكࢪࢪ تَم حظࢪك بنجاح ما ٱكدر اخليك تزعج المالك \n- - بباي 🙁🤍"
+            USER_BOT_WARN_ZERO = f"-   كتلك لا تضل تمظرط گول شتريد ابلع بلوك   \n- - بباي 🦂"
         msg = await event.reply(USER_BOT_WARN_ZERO)
         await event.client(functions.contacts.BlockRequest(chat.id))
         the_message = f"#المحظورين_الحمايه\
@@ -119,13 +119,13 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""᯽︙ اهلا بك {mention} \n مالك الحساب غير موجود حاليا الرجاء الانتظار وعدم تكرار الرسائل. 
+        USER_BOT_NO_WARN = f"""᯽︙ اهلا بك {mention} \n ما موجود من اجي ارد عليك لتلح وياك سورس العقرب  🦂. 
 
-لديك {warns}/{totalwarns} من التحذيرات لا تكرر الرسائل. """
+لديك {warns}/{totalwarns} اذا تلح تبلع بلوك. """
     else:
-        USER_BOT_NO_WARN = f"""᯽︙ اهلا بك {mention} \n مالك الحساب غير موجود حاليا الرجاء الانتظار وعدم تكرار الرسائل. 
+        USER_BOT_NO_WARN = f"""᯽︙ اهلا بك {mention} \n  مو گلت لا تلح كافي روح ولي يم اهلك وياك سورس العقرب 🦂. 
 
-لديك {warns}/{totalwarns} من التحذيرات لا تكرر الرسائل. """
+لديك {warns}/{totalwarns}  اذا تلح تبلع بلوك . """
     addgvar("pmpermit_text", USER_BOT_NO_WARN)
     PM_WARNS[str(chat.id)] += 1
     try:
@@ -180,7 +180,7 @@ async def do_pm_options_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = "- اختار احد الخيارات في الأعلى ولا تكرر اختيارك وهذا اخر تحذير لك"
+        text = "- اخر انذار راح تبلع  "
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -199,7 +199,7 @@ async def do_pm_options_action(event, chat):
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = f"- اتذكر حذرتك وقلت لك لا تكرر اكثر من خيار ولا ترسل رسائل مجرد انتظر. \
+    USER_BOT_WARN_ZERO = f"- هيچ احسلك يلة دي 😹 . \
 تعتقد راح اخليك تكرر لا اسف راح احظرك من الحساب. \
 حاليا متكدر بعد تتكلم الى ان ياتي صاحب الحساب ويقوم بالغاء الحظر. 🙂💘"
     await event.reply(USER_BOT_WARN_ZERO)
@@ -896,5 +896,5 @@ async def approve_p_m(event):
         event,
         APPROVED_PMs,
         file_name="قائمة الحماية الجوكر.txt",
-        caption="قائمة المسموح لهم الحالية\n سورس الجوكر \n @jepthon",
+        caption="قائمة المسموح لهم الحالية\n سورس العقرب \n @Scorpions_scorp",
     )
