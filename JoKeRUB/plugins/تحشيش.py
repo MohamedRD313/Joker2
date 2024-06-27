@@ -21,9 +21,9 @@ plugin_category = "utils"
 
 
 
-#كـتابة المـلف وتعديل.    :   السيد حسين.   اخمط وسمي روحك مطور فرخي 😂
-# اذا انت ابن حرام اخمط 😂
-# اي بعدك تريد تخمط ترا من تخمط مراح تنجح
+# كـتابة المـلف وتعديل.    : سورس العقرب 🦂   .   اخمط براحتك   
+# كمل براحتك
+# سورس العقرب  🦂
 rehu = [
     "شكم مره كتلك خلي نفلش الكروب",
     "باع هذا اللوكي شديسوي",
@@ -154,7 +154,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفع المتهم طالب سادس بواسطة :** {my_mention} \n**᯽︙  لك انتة الله غاضب عليك 😹  **")
 
-@l313l.on(admin_cmd(pattern="رفع كحبة(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع وردة?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -166,7 +166,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفع المتهم كحبة 👙 بواسطة :** {my_mention} \n**᯽︙  ها يلكحبة طوبز خلي انيجك/ج**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعها وردة الكروب 🌹 بواسطة :** {my_mention} \n**᯽︙  عطرك ترس الكروب 🤍🤭  **")
 
 @l313l.on(admin_cmd(pattern="رفع كردي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -262,7 +262,7 @@ async def permalink(mention):
 async def permalink(mention):
     await edit_or_reply(mention, f"@Scorpions_scorp")
 
-@l313l.on(admin_cmd(pattern="رفع ايجة(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع سندرلا(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -274,7 +274,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه ايچة 🤤 بواسطة :** {my_mention} \n**᯽︙  ها يلأيچة تطلعين درب بـ$25 👙**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـها سندرلا 😍 بواسطة :** {my_mention} \n**᯽︙  لحظه حذائج وكع 👠 🥰😂  **")
 
 @l313l.on(admin_cmd(pattern="رفع بزون(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
