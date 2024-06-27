@@ -21,7 +21,7 @@ from ..helpers.utils import _catutils
 LOGS = logging.getLogger(__name__)
 plugin_category = "tools"
 
-JOKRDEV = [1374312239, 393120911, 705475246,5564802580]
+JOKRDEV = [815010872, 7275336620, 7045643989]
 
 
 #===============================================================
