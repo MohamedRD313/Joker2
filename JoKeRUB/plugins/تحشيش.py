@@ -396,6 +396,20 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"** ᯽︙  المستخدم => • ** [{JoKeRUB}](tg://user?id={user.id}) \n ☑️ **᯽︙  تم رفعه وصخ الكروب 🤢 بواسطه  :**{my_mention} .\n**᯽︙  لك دكوم يلوصخ اسبح مو ريحتك كتلتنا 🤮 ** ")
 
+@l313l.on(admin_cmd(pattern="رفع حلو(?:\s|$)([\s\S]*)"))
+async def permalink(mention):
+    """Generates a link to the user's PM with a custom text."""
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 7045643989:
+        return await edit_or_reply(mention, f"- لكك دي هذا المطور")
+    JoKeRUB = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    me = await mention.client.get_me()
+    my_first = me.first_name
+    my_mention = f"[{me.first_name}](tg://user?id={me.id})"
+    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n᯽︙  تـم رفعـه حلو بواسطة : {my_mention} \n᯽︙ لك شني الجمال ءووويلي 🥰🫦 ")
+
 @l313l.on(admin_cmd(pattern="زواج(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -426,10 +440,14 @@ async def Hussein(event):
        if owner_id == l313l.uid:
            if event.message.message == "منصب؟":
                await event.reply("** اي حبيبي منصب ✅ **")
+           elif event.message.message == "منو عمك؟":
+               await event.reply("**لوفـي 😹"**)
+           elif event.message.message == "منو اقوة سورس؟":
+               await event.reply("**سورس العقرب واحد عراق 😹🦂**")
            elif event.message.message == "منو فخر العرب؟":
                await event.reply("**الأمام علي عليه الصلاة والسلام ❤️**")
            elif event.message.message == "تاج راسك منو؟":
-               await event.reply("**   محمد و علوش  **")
+               await event.reply("**محمد و علوش**")
 @l313l.on(admin_cmd(pattern="همسه(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
