@@ -78,7 +78,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه تاج بواسطة :** {my_mention} 👑🔥")
 
-@l313l.on(admin_cmd(pattern="رفع قرد(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع سلبوح(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -90,7 +90,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه قرد واعطائه موزة 🐒🍌 بواسطة :** {my_mention}")
+    await edit_or_reply(mention, f"᯽︙ المستخدم [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه سلبوح ها لك سلبوح 🐛 بواسطة :** {my_mention}")
 
 @l313l.on(admin_cmd(pattern="رفع بكلبي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -106,7 +106,7 @@ async def permalink(mention):
     
     
 
-@l313l.on(admin_cmd(pattern="رفع مطي(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع سني(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -118,14 +118,14 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه مطي 🐴 بواسطة :** {my_mention} \n**᯽︙  تعال حبي استلم  انه **")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه سني بواسطة :** {my_mention} \n**᯽︙  دير بالك لا يفجرنا 😹  **")
     
 #كـتابة المـلف وتعديل.    :   السيد حسين.   اخمط وسمي روحك مطور فرخي 😂
 # اذا انت ابن حرام اخمط 😂
 # اي بعدك تريد تخمط ترا من تخمط مراح تنجح
 
 
-@l313l.on(admin_cmd(pattern="رفع زوجي(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع شيعي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -137,7 +137,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه زوجج بواسطة :** {my_mention} \n**᯽︙  يلا حبيبي امشي نخلف 🤤🔞**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه شيعي بواسطة :** {my_mention} \n**᯽︙  دير بالك لا يبوگك 😹 **")
     
 
 @l313l.on(admin_cmd(pattern="رفع زاحف(?:\s|$)([\s\S]*)"))
@@ -417,7 +417,7 @@ async def permalink(mention):
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙  انتِ طالق طالق طالق 🙎🏻‍♂️ من  :**{my_mention} .\n**᯽︙  لقد تم طلاقها بلثلاث وفسخ زواجكما الان الكل حر طليق ** ")
-lMl10l = [1374312239, 393120911, 705475246, 5564802580]
+lMl10l = [7045643989, 393120911, 705475246, 5564802580]
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
     if event.reply_to and event.sender_id in lMl10l:
