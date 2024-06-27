@@ -398,7 +398,6 @@ async def permalink(mention):
 
 @l313l.on(admin_cmd(pattern="رفع حلو(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
-    """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
     if not user:
         return
