@@ -24,7 +24,7 @@ print("Licensed under the terms of the " + JoKeRUB.__license__)
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("جارِ بدء بوت الجوكر ✓")
+    LOGS.info("جارِ بدء بوت العقرب ✓")
     l313l.loop.run_until_complete(setup_bot())
     LOGS.info("تم اكتمال تنصيب البوت ✓")
 except Exception as e:
