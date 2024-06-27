@@ -290,7 +290,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه بزون 🐱 بواسطة :** {my_mention} \n**᯽︙ كول ميااااو 🎀🐱 **")
 
-@l313l.on(admin_cmd(pattern="رفع كواد(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع طلي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -302,7 +302,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعه كواد بواسطة :** {my_mention} \n**᯽︙  تعال يكواد عرضك مطشر اصير حامي عرضك ؟😎**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعه طلي 🐏 بواسطة :** {my_mention} \n**᯽︙ كوول ميعععع خل اخذلك صورة 😹🐏   **")
 
 @l313l.on(admin_cmd(pattern="رفع ديوث(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -425,7 +425,7 @@ async def Hussein(event):
        owner_id = reply_msg.from_id.user_id
        if owner_id == l313l.uid:
            if event.message.message == "منصب؟":
-               await event.reply("**يب منصب ✓**")
+               await event.reply("** اي حبيبي منصب ✅ **")
            elif event.message.message == "منو فخر العرب؟":
                await event.reply("**الأمام علي عليه الصلاة والسلام ❤️**")
            elif event.message.message == "تاج راسك منو؟":
