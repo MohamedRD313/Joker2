@@ -195,7 +195,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 7275336620:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
-    if user.id == 7045643989:
+    if user.id == 815010872:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(mention, f"᯽︙ ولك [{tag}](tg://user?id={user.id}) \n᯽︙  هيو لتندك بسيادك لو بهاي 👞👈")
@@ -214,7 +214,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـها حية الكروب  بواسطة :** {my_mention} \n**᯽︙  ها لچ تس تس 🐍😉 **")
 
-@l313l.on(admin_cmd(pattern="رفع هايشة(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع حامل(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -226,7 +226,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه المتهم هايشة 🐄 بواسطة :** {my_mention} \n**᯽︙  ها يلهايشة خوش بيك حليب تعال احلبك 😂**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه حامل 🤰 بواسطة :** {my_mention} \n**᯽︙  بيا شهر 🤰؟😹  **")
 
 @l313l.on(admin_cmd(pattern="رفع زنجي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -251,9 +251,9 @@ async def permalink(mention):
         return
     if user.id == 7045643989:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
-    if user.id == 7045643989:
+    if user.id == 815010872:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
-    if user.id == 7045643989:
+    if user.id == 7275336620:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(mention, f"** ⣠⡶⠚⠛⠲⢄⡀\n⣼⠁      ⠀⠀⠀⠳⢤⣄\n⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇\n⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄\n⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄\n⠀⠀⠀⠘⣆       ⠀⠀⠀⠀⠀⠈⠓⢦⣀\n⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤\n⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧\n⠀⠀⠀⠀⠀⠀⠀    ⠓⠦⠀⠀⠀⠀**\n**🚹 ¦ تعال مصه عزيزي ** [{tag}](tg://user?id={user.id})")
@@ -276,7 +276,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه ايچة 🤤 بواسطة :** {my_mention} \n**᯽︙  ها يلأيچة تطلعين درب بـ$25 👙**")
 
-@l313l.on(admin_cmd(pattern="رفع زبال(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع بزون(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -288,7 +288,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه زبال الكروب 🧹 بواسطة :** {my_mention} \n**᯽︙  تعال يلزبال اكنس الكروب لا أهينك 🗑😹**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{JoKeRUB}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه بزون 🐱 بواسطة :** {my_mention} \n**᯽︙ كول ميااااو 🎀🐱 **")
 
 @l313l.on(admin_cmd(pattern="رفع كواد(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -417,7 +417,7 @@ async def permalink(mention):
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**᯽︙  انتِ طالق طالق طالق 🙎🏻‍♂️ من  :**{my_mention} .\n**᯽︙  لقد تم طلاقها بلثلاث وفسخ زواجكما الان الكل حر طليق ** ")
-lMl10l = [7045643989, 7275336620, 7045643989, 7045643989]
+lMl10l = [7045643989, 7275336620, 7045643989, 815010872]
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
     if event.reply_to and event.sender_id in lMl10l:
@@ -428,7 +428,7 @@ async def Hussein(event):
                await event.reply("**يب منصب ✓**")
            elif event.message.message == "منو فخر العرب؟":
                await event.reply("**الأمام علي عليه الصلاة والسلام ❤️**")
-           elif event.message.message == "تاج":
+           elif event.message.message == " تاج راسك منو؟ ":
                await event.reply("**   محمد و علوش  **")
 @l313l.on(admin_cmd(pattern="همسه(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
