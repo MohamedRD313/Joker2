@@ -1,11 +1,13 @@
+import os
 from flask import Flask
-app = Flask(__name__)
+from flask_restful import Resource, Api
 
+app = Flask(name)
+api = Api(app)
 
-@app.route('/')
-def hello_world():
-    return 'This is Scorpion'
+class Greeting (Resource):
+    def get(self):
+        return "𝗦𝗰𝗼𝗿𝗽𝗶𝗼𝗻 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 👊🏻 "
 
-
-if __name__ == "__main__":
-    app.run()
+api.add_resource(Greeting, '/')
+app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
