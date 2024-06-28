@@ -15,9 +15,17 @@
       "description": " خلي اي اسم انكليزي  ",
       "value": ""
     },
+    "APP_ID": {
+      "description": " آب ايدي  ",
+      "value": ""
+    }, 
+    "API_HASH": {
+      "description": " آيبي هاش ",
+      "value": ""
+    },
     "ENV": {
       "description": " لا تلعب بهاي حبيبي ",
-      "value": "ANYTHING"
+      "value": "ANYTHING" 
     },
     "STRING_SESSION": {
       "description": "( هنا خلي جلسة ترمكس )",
@@ -33,10 +41,6 @@
       "value": "",
       "required": false
     },
-    "TG_BOT_USERNAME": {
-      "description": "هنا خلي يوزر بوتك @",
-      "value": ""
-    },
     "TG_BOT_TOKEN": {
       "description": " هنا خلي توكن حبيبي ",
       "value": ""
@@ -45,8 +49,7 @@
       "description": "  لتلعب هنا عوفها ",
       "value": "Asia/Baghdad",
       "required": false
-    }
-  },
+    }, 
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
