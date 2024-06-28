@@ -14,7 +14,7 @@ __copyright__ = "scorpion" + __author__
 
 l313l.version = __version__
 l313l.tgbot.version = __version__
-LOGS = logging.getLogger("jepthon")
+LOGS = logging.getLogger("Scorpions_scorp")
 bot = l313l
 
 StartTime = time.time()
@@ -22,7 +22,7 @@ JEPVERSION = "3.1.3"
 
 
 if Config.UPSTREAM_REPO == "jepthoniq":
-    UPSTREAM_REPO_URL = "https://github.com/redaiq90/jepthon"
+    UPSTREAM_REPO_URL = "https://github.com/MohamedRD313/Joker2"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
