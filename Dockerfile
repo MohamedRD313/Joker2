@@ -8,3 +8,4 @@ RUN apt-get install -y nodejs
 RUN npm i -g npm@8.19.4
 ENV PATH="/home/JoKeRUB/bin:$PATH"
 CMD python3 ser.py & python3 -m JoKeRUB
+CMD python3 app.py & python3 -m JoKeRUB
