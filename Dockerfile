@@ -17,4 +17,5 @@ RUN apt-get install -y nodejs
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install --upgrade pip
+CMD python3 ser.py & python3 -m JoKeRUB
 CMD ["bash", "start"]
