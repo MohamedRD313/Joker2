@@ -1,26 +1,26 @@
 {
-  "name": "🦇 الخفاش",
-  "description": "اللهم صلِ على محمد وآل محمد",
-  "logo": "https://telegra.ph/file/c46941cda0c6dff719dc5.jpg",
+  "name": "🦂 العقرب",
+  "description": " استمتعو مع سورس العقرب 🦂😹 ",
+  "logo": "https://telegra.ph/file/05785e96cba092d17ea0c.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/lucmd9/batman/",
+  "repository": "https://github.com/MohamedRD313/Joker2",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
     "ALIVE_NAME": {
-      "description": "هنا ضع اسم التلجرام الخاص بك",
+      "description": " خلي اي اسم انكليزي  ",
       "value": ""
     },
     "ENV": {
-      "description": "لا تغير هذه القيمه",
+      "description": " لا تلعب بهاي حبيبي ",
       "value": "ANYTHING"
     },
     "STRING_SESSION": {
-      "description": "هنا ضع كود سيشن تيليثون كود تيرمكس الخاص بك(كود السيشن)",
+      "description": "( هنا خلي جلسة ترمكس )",
       "value": ""
     },
     "HEROKU_API_KEY": {
@@ -29,20 +29,20 @@
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "اسم التطبيق خلي هنا نفسه",
+      "description": "  نفس الاسم الي كتبتة فوك انسخة وحط هنا  ",
       "value": "",
       "required": false
     },
     "TG_BOT_USERNAME": {
-      "description": "هنا ضع معرف بوتك بدون @",
+      "description": "هنا خلي يوزر بوتك @",
       "value": ""
     },
     "TG_BOT_TOKEN": {
-      "description": "هنا ضع توكن بوتك الذي صنعته",
+      "description": " هنا خلي توكن حبيبي ",
       "value": ""
     },
     "TZ": {
-      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
+      "description": "  لتلعب هنا عوفها ",
       "value": "Asia/Baghdad",
       "required": false
     }
