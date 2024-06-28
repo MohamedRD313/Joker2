@@ -18,10 +18,17 @@ from .utils import (
 
 LOGS = logging.getLogger("JoKeRUB")
 
+
+
 print(JoKeRUB.__copyright__)
 print("Licensed under the terms of the " + JoKeRUB.__license__)
 
 cmdhr = Config.COMMAND_HAND_LER
+
+class JoKeRUB:
+    def __init__(self):
+        self.sucess = True
+JoKeRUB = JoKeRUB()
 
 try:
     LOGS.info("جارِ بدء بوت العقرب ✓")
