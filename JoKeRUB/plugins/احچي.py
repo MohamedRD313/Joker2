@@ -1,7 +1,4 @@
 """
-JoKeRUB team ©
-By Reda
-sub Hussein
 """
 import os
 from datetime import datetime
@@ -117,10 +114,10 @@ async def _(event):
     reply = await event.get_reply_message()
     lan = event.pattern_match.group(1)
     if not reply:
-     return edit_delete(event, "**᯽︙ قم بالرد على الصورة المراد استخراج النص منه**")
+     return edit_delete(event, "**🦂 قم بالرد على الصورة المراد استخراج النص منه**")
     pic_file = await l313l.download_media(reply, Config.TMP_DOWNLOAD_DIRECTORY)
     if not pic_file:
-        return await edit_delete(event, "**᯽︙ قم بالرد على صورة**")
+        return await edit_delete(event, "**🦂 قم بالرد على صورة**")
     else:
      if not lan:
             api = ocrspace.API()
@@ -129,6 +126,6 @@ async def _(event):
              lang = langs[lan.replace(" ", "")]
              api = ocrspace.API(language=lang)
             except BaseException as er:
-             return await edit_delete(event, "**᯽︙ !لا يوجد هكذا لغة**")
-     await edit_or_reply(event, "**᯽︙ يجري استخراج النص...**")
+             return await edit_delete(event, "**🦂 !لا يوجد هكذا لغة**")
+     await edit_or_reply(event, "**🦂 يجري استخراج النص...**")
      await edit_or_reply(event, to_text(pic_file, api))
