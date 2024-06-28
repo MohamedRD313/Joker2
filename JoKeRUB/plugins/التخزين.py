@@ -134,11 +134,11 @@ async def log(log_text):
             textx = user + log_text.pattern_match.group(1)
             await log_text.client.send_message(BOTLOG_CHATID, textx)
         else:
-            await log_text.edit("**⌔┊بالــرد على اي رسـاله لحفظهـا في كـروب التخــزين**")
+            await log_text.edit("**✎┊‌بالــرد على اي رسـاله لحفظهـا في كـروب التخــزين**")
             return
-        await log_text.edit("**⌔┊تـم الحفـظ في كـروب التخـزين .. بنجـاح ✓**")
+        await log_text.edit("**✎┊‌تـم الحفـظ في كـروب التخـزين .. بنجـاح ✓**")
     else:
-        await log_text.edit("**⌔┊عـذراً .. هـذا الامـر يتطلـب تفعيـل فـار التخـزين اولاً**")
+        await log_text.edit("**✎┊‌عـذراً .. هـذا الامـر يتطلـب تفعيـل فـار التخـزين اولاً**")
     await asyncio.sleep(2)
     await log_text.delete()
 
