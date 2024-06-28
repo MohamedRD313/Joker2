@@ -44,7 +44,7 @@ async def amireallyalive(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
-    EMOJI = gvarstatus("ALIVE_EMOJI") or "✎┊‌‎"
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "**✎┊‌**‎"
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** ╔==========================╗ **"
     HuRe_IMG = gvarstatus("ALIVE_PIC") or Config.A_PIC
     l313l_caption = gvarstatus("ALIVE_TEMPLATE") or temp
@@ -77,7 +77,7 @@ async def amireallyalive(event):
         except (WebpageMediaEmptyError, MediaEmptyError, WebpageCurlFailedError):
             return await edit_or_reply(
                 event,
-                f"**الميـديا خـطأ **\nغـير الرابـط بأستـخدام الأمـر  \n `.اضف_فار ALIVE_PIC رابط صورتك`\n\n**لا يمـكن الحـصول عـلى صـورة من الـرابـط :-** `{PIC}`",
+                f"**الميـديا خـطأ **\n**غـير الرابـط بأستـخدام الأمـر ** \n `.اضف_فار ALIVE_PIC رابط صورتك`\n\n**لا يمـكن الحـصول عـلى صـورة من الـرابـط :-** `{PIC}`",
             )
     else:
         await edit_or_reply(
@@ -102,4 +102,4 @@ temp = """{ALIVE_TEXT}
 ‌‎**{EMOJI}‌‎‌‎𝐒𝐞𝐭𝐮𝐩 𝐃𝐚𝐭𝐞 | `{Tare5}`** ٫
 
      - 𝗚𝗼 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 😉
-╚==========================╝"""
+**╚==========================╝**"""
