@@ -1,2 +1,0 @@
-gunicorn app:app & python3 -m JoKeRUB
-gunicorn app:ser & python3 -m JoKeRUB
