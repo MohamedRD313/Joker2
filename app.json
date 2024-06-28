@@ -22,11 +22,11 @@
     "API_HASH": {
       "description": " آيبي هاش ",
       "value": ""
-      }, 
+    }, 
       "APP_ID": {
       "description":" ايبي ايدي ",
-      "value": ""
-      }, 
+      "value": "" 
+    }, 
     "STRING_SESSION": {
       "description": "هنا ضع كود سيشن تيليثون كود تيرمكس الخاص بك(كود السيشن)",
       "value": ""
@@ -43,8 +43,12 @@
     },
     "TG_BOT_TOKEN": {
       "description": "هنا ضع توكن بوتك الذي صنعته",
-      "value": ""
+      "value":"" 
     },
+        "TG_BOT_USERNAME": {
+      "description": "هنا ضع معرف بوتك بدون @",
+      "value": ""
+    }, 
     "TZ": {
       "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
       "value": "Asia/Baghdad",
