@@ -1,13 +1,9 @@
 {
-  "name": "العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂"
-  "description": "استمتعو مع سورس العقرب  😹",
+  "name": ""العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂" ",
+  "description": " استمتعو مع سورس العقرب 🦂😹 ",
   "logo": "https://telegra.ph/file/05785e96cba092d17ea0c.jpg",
-  "keywords": [
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/MohamedRD313/Joker2",
+  "keywords": ["plugin", "modular", "productivity"],
+  "repository": "مالكم دخل",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -15,20 +11,20 @@
       "description": "هنا ضع اسم التلجرام الخاص بك",
       "value": ""
     },
-    "ENV": {
-      "description": "لا تغير هذه القيمه",
-      "value": "ANYTHING"
+    "APP_ID": {
+      "description": "هنا ضع الاب ايدي الخاص بك يتكون من 8 أرقام", 
+      "value": ""
     },
     "API_HASH": {
-      "description": " آيبي هاش ",
+      "description": "هنا ضع الايبي هاش الخاص بك",
       "value": ""
-    }, 
-      "APP_ID": {
-      "description":" ايبي ايدي ",
-      "value": "" 
-    }, 
+    },
+    "ENV": {
+      "description": "لا تغير هذه القيمة",
+      "value": "ANYTHING"
+    },
     "STRING_SESSION": {
-      "description": "هنا ضع كود سيشن تيليثون كود تيرمكس الخاص بك(كود السيشن)",
+      "description": "هنا ضع كود التيرمكس أو كود البايروجرام الخاص بك",
       "value": ""
     },
     "HEROKU_API_KEY": {
@@ -37,20 +33,16 @@
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "اسم التطبيق خلي هنا نفسه",
+      "description": "اسم التطبيق أول مربع كتبته خلي هنا نفسه وحروف صغيرة",
       "value": "",
       "required": false
     },
     "TG_BOT_TOKEN": {
       "description": "هنا ضع توكن بوتك الذي صنعته",
-      "value":"" 
-    },
-        "TG_BOT_USERNAME": {
-      "description": "هنا ضع معرف بوتك بدون @",
       "value": ""
-    }, 
+    },
     "TZ": {
-      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
+      "description": "المنطقة الزمنية من القارة الخاصة بك وعاصمة بلدك يجب أن يكون أول حرف كبير",
       "value": "Asia/Baghdad",
       "required": false
     }
@@ -61,21 +53,36 @@
       "version": "15"
     }
   }],
-  "buildpacks": [{
-    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
-  },{
-    "url": "https://github.com/riganf/heroku-buildpack-p7zip"
-  },{
-    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
-  },{
-    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-  },{
-    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-  },{
-    "url": "https://github.com/jepthoniq/heroku-buildpack-ffmpeg-latest"
-  },{
-    "url": "heroku/python"
-  }]
+  "buildpacks": [
+    {
+      "url": "https://github.com/jepthoniq/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/riganf/heroku-buildpack-p7zip"
+    },
+    {
+      "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+    },
+    {
+      "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "stack": "heroku-22"
 }
