@@ -38,7 +38,7 @@ async def get_font_file(client, channel_id):
 
 @zedub.zed_cmd(pattern=r"لوكو ?(.*)")
 async def lg1(userevent):
-    event = await eor(userevent, "**- جـارِ صنـع لـوكـو انكـلش بحقـوقك ...**")
+    event = await edit_or_reply(userevent, "**- جـارِ صنـع لـوكـو انكـلش بحقـوقك ...**")
     me = await userevent.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
@@ -58,13 +58,13 @@ async def lg1(userevent):
         logo_ = await pic.download_media()
     text = userevent.pattern_match.group(1)
     if not text:
-        await eor(event, "- الامـر + نص او الامـر + نص بالـرد ع صـورة ...")
+        await edit_or_reply(event, "- الامـر + نص او الامـر + نص بالـرد ع صـورة ...")
         return
     arabic_text = "".join(
         char for char in text if char.isalpha() and char not in string.ascii_letters
     )
     if arabic_text:
-        await eor(event, "**- الرجاء إدخال نص باللغـة الانجليـزية فقـط.**\n`.لوكو` + **نص انكـلش**\n`.لوقو` + **نص عـربـي**")
+        await edit_or_reply(event, "**- الرجاء إدخال نص باللغـة الانجليـزية فقـط.**\n`.لوكو` + **نص انكـلش**\n`.لوقو` + **نص عـربـي**")
         return
     if len(text) <= 8:
         font_size_ = 150
@@ -112,7 +112,7 @@ async def lg1(userevent):
 
 @zedub.zed_cmd(pattern=r"لوقو ?(.*)")
 async def lg1(userevent):
-    event = await eor(userevent, "**- جـارِ صنـع لـوقـو عـربـي بحقـوقك ...**")
+    event = await edit_or_reply(userevent, "**- جـارِ صنـع لـوقـو عـربـي بحقـوقك ...**")
     me = await userevent.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
