@@ -36,7 +36,7 @@ async def get_font_file(client, channel_id):
 
 
 
-@zedub.zed_cmd(pattern=r"لوكو ?(.*)")
+@l313l.ar_cmd(pattern=r"لوكو ?(.*)")
 async def lg1(userevent):
     event = await edit_or_reply(userevent, "**- جـارِ صنـع لـوكـو انكـلش بحقـوقك ...**")
     me = await userevent.client.get_me()
@@ -110,7 +110,7 @@ async def lg1(userevent):
 
 
 
-@zedub.zed_cmd(pattern=r"لوقو ?(.*)")
+@l313l.ar_cmd(pattern=r"لوقو ?(.*)")
 async def lg1(userevent):
     event = await edit_or_reply(userevent, "**- جـارِ صنـع لـوقـو عـربـي بحقـوقك ...**")
     me = await userevent.client.get_me()
@@ -132,13 +132,13 @@ async def lg1(userevent):
         logo_ = await pic.download_media()
     text = userevent.pattern_match.group(1)
     if not text:
-        await eor(event, "- الامـر + نص او الامـر + نص بالـرد ع صـورة ...")
+        await edit_or_reply(event, "- الامـر + نص او الامـر + نص بالـرد ع صـورة ...")
         return
     arabic_text = "".join(
         char for char in text if char.isalpha() and char not in string.ascii_letters
     )
     if not arabic_text: 
-        await eor(event, "**- الرجاء إدخال نص باللغـة العربيـة فقـط.**\n`.لوقو` + **نص عـربـي**\n`.لوكو` + **نص انكـلش**")
+        await edit_or_reply(event, "**- الرجاء إدخال نص باللغـة العربيـة فقـط.**\n`.لوقو` + **نص عـربـي**\n`.لوكو` + **نص انكـلش**")
         return
     if len(text) <= 8:
         font_size_ = 150
