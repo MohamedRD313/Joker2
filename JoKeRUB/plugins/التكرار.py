@@ -236,7 +236,7 @@ async def tmeme(event):
             await event.client.send_message(
                 BOTLOG_CHATID,
                 "**✎┊‌ تكرار بالحرف 📝 :**\n"
-                + f"**⌔∮ تم تنفيذ الإزعاج بواسطة الأحرف في   ▷  :** {get_display_name(await event.get_chat())}(`{event.chat_id}`) **الدردشة مع** : `{message}`",
+                + f"**✎┊‌ تم تنفيذ الإزعاج بواسطة الأحرف في   ▷  :** {get_display_name(await event.get_chat())}(`{event.chat_id}`) **الدردشة مع** : `{message}`",
             )
 
 
@@ -287,7 +287,7 @@ async def Hussein(event):
     parameters = re.split(r'\s+', event.text.strip(), maxsplit=2)
     if len(parameters) != 3:
         return await edit_delete(
-            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+            event, "✎┊‌ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
         )
     seconds = int(parameters[1])
     chat_usernames = parameters[2].split()
@@ -301,7 +301,7 @@ async def Hussein(event):
             await aljoker_nshr(l313l, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
         except Exception as e:
             await edit_delete(
-                event, f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
+                event, f"✎┊‌ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
             )
         await asyncio.sleep(1)
     
@@ -329,7 +329,7 @@ async def Hussein(event):
         sleeptimet = int(seconds[0])
     except Exception:
         return await edit_delete(
-            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+            event, "✎┊‌ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
         )
     l313l = event.client
     global yaAli
@@ -361,7 +361,7 @@ async def Hussein(event):
         sleeptimet = int(seconds[0])
     except Exception:
         return await edit_delete(
-            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+            event, "✎┊‌ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
         )
     l313l = event.client
     global yaAli
@@ -371,4 +371,4 @@ async def Hussein(event):
 async def stop_aljoker(event):
     global yaAli
     yaAli = False
-    await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
+    await event.edit("**✎┊‌ تم ايقاف النشر التلقائي بنجاح ✓** ")
