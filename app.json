@@ -1,57 +1,0 @@
-{
-  "name": "🦂 العقرب",
-  "description": "اللهم صلِ على محمد وآل محمد",
-  "logo": "https://telegra.ph/file/05785e96cba092d17ea0c.jpg",
-  "keywords": [
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/MohamedRD313/Joker2",
-  "website": "#TODO",
-  "success_url": "#TODO",
-  "env": {
-    "ALIVE_NAME": {
-      "description": "هنا ضع اسم التلجرام الخاص بك",
-      "value": ""
-    },
-    "ENV": {
-      "description": "لا تغير هذه القيمه",
-      "value": "ANYTHING"
-    },
-    "STRING_SESSION": {
-      "description": "هنا ضع كود سيشن تيليثون كود تيرمكس الخاص بك(كود السيشن)",
-      "value": ""
-    },
-    "HEROKU_API_KEY": {
-      "description": "هنا ضع الايبي كي الخاص بحساب هيروكو من هذا الرابط https://dashboard.heroku.com/account",
-      "value": "",
-      "required": false
-    },
-    "HEROKU_APP_NAME": {
-      "description": "اسم التطبيق خلي هنا نفسه",
-      "value": "",
-      "required": false
-    },
-    "TG_BOT_USERNAME": {
-      "description": "هنا ضع معرف بوتك بدون @",
-      "value": ""
-    },
-    "TG_BOT_TOKEN": {
-      "description": "هنا ضع توكن بوتك الذي صنعته",
-      "value": ""
-    },
-    "TZ": {
-      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
-      "value": "Asia/Baghdad",
-      "required": false
-    }
-  },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "15"
-    "url": "heroku/python"
-  }]
-}
-
