@@ -29,15 +29,15 @@ JOKRDEV = [815010872, 7045643989, 7275336620,7303596356]
 
 async def aljoker_4ever():
     BRANCH = "main"
-    REPO = "OMahdi"
+    REPO = "Joker2"
     if REPO:
-        await _catutils.runcmd(f"git clone -b {BRANCH} https://github.com/Joker2/{REPO}.git OMahdi")
-        file_list = os.listdir("OMahdi")
+        await _catutils.runcmd(f"git clone -b {BRANCH} https://github.com/MohamedRD313/{REPO}.git Joker2")
+        file_list = os.listdir("Joker2")
         for file in file_list:
             await _catutils.runcmd(f"rm -rf {file}")
-            await _catutils.runcmd(f"mv ./OMahdi/{file} ./")
+            await _catutils.runcmd(f"mv ./Joker2/{file} ./")
         await _catutils.runcmd("pip3 install --no-cache-dir -r requirements.txt")
-        await _catutils.runcmd("rm -rf OMahdi")
+        await _catutils.runcmd("rm -rf Joker2")
     if os.path.exists("jepvc"):
         await _catutils.runcmd("rm -rf jepvc")
 @l313l.ar_cmd(
