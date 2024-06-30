@@ -50,7 +50,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"🚻 ** ᯽︙  المستخدم => • ** [{JoKeRUB}](tg://user?id={user.id}) \n ☑️ **᯽︙  تم رفعها مرتك بواسطه  :**{my_mention} 👰🏼‍♀️.\n**᯽︙  يلا حبيبي امشي نخلف بيبي 👶🏻🤤** ")
 
-@l313l.on(admin_cmd(pattern="رفع جلب(?:\s|$)([\s\S]*)"))
+@l313l.on(admin_cmd(pattern="رفع كلب(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
