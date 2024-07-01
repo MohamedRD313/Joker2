@@ -10,7 +10,7 @@ from ..core import check_owner
 from ..Config import Config
 
 JEP_IC = "https://telegra.ph/file/806e83ebc8c15da72c80d.jpg"
-ROE = "**🦂 هـذه هي قائمة اوامـر سـورس العقرب 🦂**"
+ROE = "** قائمة اوامـر سـورس العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂**"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -26,12 +26,12 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 [
                     Button.inline("🦂 اوامر البوت 🦂", data="rozbot"),
                     Button.inline("🦂 الحساب 🦂", data="Jmrz"),
+                    ],
+            [
                     Button.inline("🦂 المجموعات 🦂", data="gro"),
-                ],
-                [
                     Button.inline("🦂 الصيغ و الجهات 🦂", data="sejrz"),
-                    Button.inline("🦂 الحماية و تلكراف 🦂", data="grrz"),
-                ],
+            ],
+            
                 [
                     Button.inline("🦂 اوامر التسلية 🦂", data="tslrzj"),
                     Button.inline("🦂 الترحيبات والردود 🦂", data="r7brz"),
@@ -45,13 +45,14 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                     Button.inline("🦂 الترفيه 🦂", data="rfhrz"),
                 ],
                 [
-                    Button.inline("🦂 التكرار والتنظيف 🦂", data="iiers"),
-                    Button.inline("🦂 الملصقات وصور 🦂", data="jrzst"),
+                    Button.inline("🦂 اوامر الاكسترا 🦂", data="iiers"),
+                    
                 ],
                 [
-                    Button.inline("🦂 الأكستـرا 🦂", data="iiers"),
                     Button.inline("🦂 الانتحال والتقليد 🦂", data="uscuxrz"),
                 ],
+            [
+                Button.inline("🦂 الحماية و تلكراف 🦂", data="grrz"), ],
             ]
             if JEP_IC and JEP_IC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
