@@ -953,7 +953,7 @@ async def handle_strike(event):
         strike_position = int(event.pattern_match.group(1))
         if strike_position == correct_answer:
             game_board = [["💍" if i == correct_answer - 1 else "🖐🏻" for i in range(6)]]
-            await event.reply(f"** خسرت شبيك مستعجل وجه الچوب 😒\n{format_board(game_board, numbers_board)}**")
+            await event.reply(f"**شبيك مستعجل وجه السمجه 🗿\n{format_board(game_board, numbers_board)}**")
             game_board = [row[:] for row in original_game_board]
             group_game_status[chat_id]['is_game_started2'] = False
             group_game_status[chat_id]['joker_player'] = None
@@ -962,6 +962,17 @@ async def handle_strike(event):
             lMl10l = random.choice(joker)
             await event.reply(f"**{lMl10l}**\n{format_board(game_board, numbers_board)}")
 
+if strike_position == correct_answer:
+            game_board = [["💍" if i == correct_answer - 1 else "🖐🏻" for i in range(6)]]
+            await event.reply(f"**دنطي مجال شبيك 😪\n{format_board(game_board, numbers_board)}**")
+            game_board = [row[:] for row in original_game_board]
+            group_game_status[chat_id]['is_game_started2'] = False
+            group_game_status[chat_id]['joker_player'] = None
+        else:
+            game_board[0][strike_position - 1] = '🖐🏻'
+            lMl10l = random.choice(joker)
+            await event.reply(f"**{lMl10l}**\n{format_board(game_board, numbers_board)}")
+            
 @l313l.on(events.NewMessage(pattern=r'\جيب (\d+)'))
 async def handle_guess(event):
     global group_game_status, correct_answer, game_board
@@ -979,12 +990,12 @@ async def handle_guess(event):
                 sorted_points = sorted(points.items(), key=lambda x: x[1], reverse=True)
                 points_text = '\n'.join([f'{i+1}• {(await l313l.get_entity(participant_id)).first_name}: {participant_points}' for i, (participant_id, participant_points) in enumerate(sorted_points)])
                 game_board = [["💍" if i == correct_answer - 1 else "🖐🏻" for i in range(6)]]
-                await l313l.send_message(event.chat_id, f'الف مبروووك 🎉 الاعب ( {sender_first_name} ) وجد المحبس 💍!\n{format_board(game_board, numbers_board)}')
+                await l313l.send_message(event.chat_id, f'لككك وحششش 😂🎉 الاعب ( {sender_first_name} ) وچان تلگي المحبس 💍!\n{format_board(game_board, numbers_board)}')
                 game_board = [row[:] for row in original_game_board]
                 await l313l.send_message(event.chat_id, f'نقاط الاعب : {points[winner_id]}\nنقاط المشاركين:\n{points_text}')
             else:
                 game_board = [["💍" if i == correct_answer - 1 else "🖐🏻" for i in range(6)]]
-                await event.reply(f"**ضاع البات ماضن بعد تلگونة ☹️\n{format_board(game_board, numbers_board)}**")
+                await event.reply(f"**ضاع البات ماضن بعد تلگونة 😂\n{format_board(game_board, numbers_board)}**")
                 game_board = [row[:] for row in original_game_board]
             group_game_status[chat_id]['is_game_started2'] = False
             group_game_status[chat_id]['joker_player'] = None
@@ -1000,7 +1011,7 @@ async def handle_incoming_message(event):
         }
     if group_game_status[chat_id]['is_game_started2'] and not group_game_status[chat_id]['joker_player']:
         group_game_status[chat_id]['joker_player'] = event.sender_id
-        await event.reply(f"**تم تسجيلك في المسابقة روح لحسين بظهرك\n{format_board(game_board, numbers_board)}**")
+        await event.reply(f"**تم تسجيلك في لعبة المحيبس يلا شوفنه قدراتك 🙃\n{format_board(game_board, numbers_board)}**")
 
 def format_board(game_board, numbers_board):
     formatted_board = ""
