@@ -962,17 +962,7 @@ async def handle_strike(event):
             lMl10l = random.choice(joker)
             await event.reply(f"**{lMl10l}**\n{format_board(game_board, numbers_board)}")
 
-if strike_position == correct_answer:
-            game_board = [["💍" if i == correct_answer - 1 else "🖐🏻" for i in range(6)]]
-            await event.reply(f"**دنطي مجال شبيك 😪\n{format_board(game_board, numbers_board)}**")
-            game_board = [row[:] for row in original_game_board]
-            group_game_status[chat_id]['is_game_started2'] = False
-            group_game_status[chat_id]['joker_player'] = None
-        else:
-            game_board[0][strike_position - 1] = '🖐🏻'
-            lMl10l = random.choice(joker)
-            await event.reply(f"**{lMl10l}**\n{format_board(game_board, numbers_board)}")
-            
+
 @l313l.on(events.NewMessage(pattern=r'\جيب (\d+)'))
 async def handle_guess(event):
     global group_game_status, correct_answer, game_board
