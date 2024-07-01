@@ -46,7 +46,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     sos = random.choice(rr7)
-    await edit_or_reply(mention, f"᯽︙ نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤")
+    await edit_or_reply(mention, f"✎┊‌ نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤")
 
 @l313l.ar_cmd(
     pattern="نسبة الغباء(?:\s|$)([\s\S]*)",
@@ -152,8 +152,8 @@ async def permalink(mention):
     if not user:
         return
     if user.id == 705475246:
-        return await edit_or_reply(mention, f"**السيد حلو ميحتاج تقيمه 🤤**")
+        return await edit_or_reply(mention, f"**المطور حلوه من گاعه 🥰**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     rzona = random.choice(rr7)
-    await edit_or_reply(mention, f"نسبة جماله 👩🏻‍🦳🧑🏻 لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
+    await edit_or_reply(mention, f"نسبة جماله 👩🏻‍🦳🧑🏻 لـ [{muh}](tg://user?id={user.id}) هـي {rzona}")
 
