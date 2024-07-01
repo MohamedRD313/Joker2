@@ -95,7 +95,11 @@ async def startupmessage():
             Config.CATUBLOGO = await l313l.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/29e1f94bfb75abd9b5695.jpg",
-                caption="** ✎┊‌ سورس العقرب يـعـمـل بـنـجـاح ✓ \n✎┊‌ أرسل (`.فحص`) للتأكد \n  العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂**",
+                caption="""
+                ** ✎┊‌ سورس العقرب يـعـمـل بـنـجـاح ✅ 
+                \n✎┊‌ أرسل (`.فحص` ) للتأكد
+                
+                \n العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂 **""",
                 buttons=[(Button.url("سورس العقرب ", "https://t.me/Scorpions_scorp"),)],
             )
     except Exception as e:
