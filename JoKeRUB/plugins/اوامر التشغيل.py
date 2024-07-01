@@ -57,7 +57,7 @@ async def aljoker_4ever():
 )
 async def Hussein(event):
     "To reload Your bot"
-    joker = await edit_or_reply(event, """** ✎┊‌ عيوني انتظرني 5 دقايق احدثلك السورس ✋🏻 ...
+    joker = await edit_or_reply(event, """** ✎┊‌ عيوني 5 دقايق واحدثلك السورس ✋🏻 ...
     العقرب |  𝗦𝗰𝗼𝗿𝗽𝗶𝗼 🦂 **""")
     await aljoker_4ever()
     await event.client.reload(joker)
@@ -102,7 +102,7 @@ async def set_pmlog(event):
         return await edit_or_reply(event, "**✎┊‌تـم تعطيـل التـحديـثات بنجـاح ✓**")
     if gvarstatus("restartupdate") is None:
         addgvar("restartupdate", "turn-oned")
-        return await edit_or_reply(event, "**✎┊‌تـم تشغيل التـحديـثات بنجـاح ✓**")
+        return await edit_or_reply(event, "**✎┊‌ تـم تشغيل التـحديـثات بنجـاح ✓**")
     await edit_delete(event, "**✎┊‌ تـم تشغيل التـحديـثات بالفعـل **")
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
